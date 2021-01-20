@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css" media="all">
+</head>
+
+<body>
+    <div id="controls">
+        <div style='display:inline-block;'>
+            Mode:
+            <input type="radio" id="fly-mode-rb" name="mode" value="fly"><label for="fly-mode-rb">Fly</label>
+            <input type="radio" id="player-mode-rb" name="mode" value="player" checked><label
+                for="player-mode-rb">Player</label>
+        </div>
+        <div style='display:inline-block;'><button id="reset-btn">Reset View</button></div>
+    </div>
+
+    <div id="main-container">
+        <div id="blocker">
+            <div id="instructions">
+                <span style="font-size:36px">Click to play</span>
+                <br /><br />
+                Move: WASD<br />
+                Look: MOUSE<br />
+                Scoreboard: Hold X<br />
+                Flashlight: Hold F
+            </div>
+        </div>
+        <div id=scoreboard-blocker>
+            <div id="scoreboard">
+                <span style="font-size:36px">Scoreboard</span>
+                <br /><br />
+                Keller: 1,000,000 points<br />
+                Yaro: -5
+            </div>
+        </div>
+        <div id="draw-container">
+            <canvas id="draw-canvas">
+                Oops ... your browser doesn't support the HTML5 canvas element
+            </canvas>
+        </div>
+
+    </div>
+
+    <!-- Load the main script module -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
